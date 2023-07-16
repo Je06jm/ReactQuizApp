@@ -1,0 +1,59 @@
+{
+    "quizName": "C++ 101",
+    "quizPicture": "/icons/c++.webp",
+    
+    "questionsTotal": 5,
+    "questionsPassing": 4,
+    "questions": [
+        {
+            "questionName": "What is NOT an example of control flow",
+            "choices": [
+                "while (...) {}",
+                "switch (...) {}",
+                "if (...) {}",
+                "{}"
+            ],
+            "answer": 3
+        },
+        {
+            "questionName": "What constructor must be present for move semantics",
+            "choices": [
+                "Obj()",
+                "Obj(const Obj&)",
+                "Obj(Obj&&)",
+                "explicit Obj()"
+            ],
+            "answer": 2
+        },
+        {
+            "questionName": "What is an example of passing by value",
+            "choices": [
+                "void foo(int)",
+                "void foo(int*)",
+                "void foo(int&)",
+                "void foo(int&&)"
+            ],
+            "answer": 0
+        },
+        {
+            "questionName": "What is NOT an example of a smart pointer",
+            "choices": [
+                "unique_ptr<T>",
+                "reference_ptr<T>",
+                "weak_ptr<T>",
+                "shared_ptr<T>"
+            ],
+            "answer": 1
+        },
+        {
+            "questionName": "What is an example of a lambda",
+            "choices": [
+                "[]() -> void {}",
+                "() -> void {}",
+                "() {}",
+                "[]() => void {}"
+            ],
+            "answer": 0
+        }
+    ]
+}

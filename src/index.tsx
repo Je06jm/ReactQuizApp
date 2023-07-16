@@ -1,15 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ErrorPage from './errorPage';
+
+import Index from './routes/index';
+import Quiz from './routes/quiz';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Index />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/quiz/:id',
+    element: <Quiz />,
+    errorElement: <ErrorPage />
+  }
+]);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

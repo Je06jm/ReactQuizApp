@@ -1,0 +1,59 @@
+{
+    "quizName": "Python 3",
+    "quizPicture": "/icons/python.webp",
+
+    "questionsTotal": 5,
+    "questionsPassing": 4,
+    "questions": [
+        {
+            "questionName": "What data type is NOT passed by value",
+            "choices": [
+                "int",
+                "list",
+                "boolean",
+                "float"
+            ],
+            "answer": 1
+        },
+        {
+            "questionName": "What is an example of a class that inherits from Base",
+            "choices": [
+                "class Foo @ Base",
+                "class Foo : public Base",
+                "class Foo(base)",
+                "class Foo"
+            ],
+            "answer": 2
+        },
+        {
+            "questionName": "What is NOT an example of control flow",
+            "choices": [
+                "while ...",
+                "switch",
+                "[x for x in data]",
+                "for ... in ..."
+            ],
+            "answer": 2
+        },
+        {
+            "questionName": "What data type is immutable",
+            "choices": [
+                "str",
+                "int",
+                "list",
+                "boolean"
+            ],
+            "answer": 0
+        },
+        {
+            "questionName": "What is example of how to import a library",
+            "choices": [
+                "@import math",
+                "#include <math>",
+                "include math",
+                "import math"
+            ],
+            "answer": 3
+        }
+    ]
+}
